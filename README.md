@@ -1,1 +1,1 @@
-This is a development folder for storing magnetic guidance files
+This is a development folder for storing and sharing magnetic guidance files

@@ -1,0 +1,306 @@
+----------------- Release November 20th 2018 ----------------
+- * SC          3.15.288
+-   * Fixed calibration issue with SHL20 sensor type.
+-------------------------------------------------------------
+
+----------------- Release September 6th 2018 -----------------
+- * SC          3.15.287
+-   * Fixed false end stop triggering with very small
+-     velocities.
+-   * Added support for SI24 sensor type.
+- * HCM3        1.5.112
+- * HCMn        1.4.67
+-   * Added support for SI24 sensor type.
+-------------------------------------------------------------
+
+----------------- Release December 28th 2017 -----------------
+- * SC          3.15.285
+- * HCM3        1.5.111
+- * HCMn        1.4.66
+-   * Added support for G605L, G775L, G605LE, G775LE
+      sensor types.
+-------------------------------------------------------------
+
+----------------- Release December 6th 2017 -----------------
+- * SC          3.15.284
+-   * Added support for SR77T.
+-------------------------------------------------------------
+
+----------------- Release September 20th 2017 ---------------
+- * HCM3        1.5.110
+-   * Closed-loop joystick movements now execute a
+-     gotoRelative(0) when entering dead zone instead of a
+-     stop command. Hold time applies normally.
+- * HCMn        1.4.65
+-   * Closed-loop joystick movements now execute a
+-     gotoRelative(0) when entering dead zone instead of a
+-     stop command. Hold time applies normally.
+-------------------------------------------------------------
+
+----------------- Release March 31st 2017 -------------------
+- * SC          3.15.283
+-   * Improved noise suppression for reference signal.
+-------------------------------------------------------------
+
+----------------- Release January 20th 2017 -----------------
+- * SC          3.15.282
+-   * Fixed bug that caused position glitch at the end of
+-     referencing leading to a failure of the distance code
+-     inversion auto detection of the config tool.
+-------------------------------------------------------------
+
+----------------- Release October 31st 2016 ------------------
+- * SC          3.15.281
+-   * Added support for sensor type G605DS.
+- * HCM3        1.5.109
+-   * Added support for sensor type G605DS.
+- * HCMn        1.4.64
+-   * Added support for sensor type G605DS.
+-------------------------------------------------------------
+
+----------------- Release October 21st 2016 ------------------
+- * SC          3.15.280
+-   * Added support for sensor types GED and GDD.
+- * HCM3        1.5.108
+-   * Added support for sensor types GED and GDD.
+- * HCMn        1.4.63
+-   * Added support for sensor types GED and GDD.
+-------------------------------------------------------------
+
+----------------- Release September 2nd 2016 ------------------
+- * HCMn        1.4.62
+-   * Added global option whether joystick is useable in
+-     closed-loop mode.
+-------------------------------------------------------------
+
+----------------- Release August 15th 2016 ------------------
+- * SC          3.15.279
+-   * Low Vibration mode now supports SR20 sensor type.
+-   * Fixed bug where positioner would move when setting the
+-     current position while in holding state with active
+-     speed control.
+-   * Improved filter when reading out position values.
+- * HCMn        1.4.61
+-   * Fixed issue not detecting knobs. Manual knob
+-     configuration now possible.
+-------------------------------------------------------------
+
+----------------- Release March 3rd 2016 --------------------
+- * SC          3.15.275
+-   * Added property to read out analog aux signal.
+- * IMusb       1.1.36
+-   * Added support for channel index mapping.
+- * IMeth       1.1.19
+-   * Added support for channel index mapping.
+- * IMrs        1.4.49
+-   * Added support for channel index mapping.
+-------------------------------------------------------------
+
+--------------- Release November 20th 2015 ------------------
+- * SC          3.15.274
+-   * New feature: Find reference algorithm can be done
+-     under speed control to avoid reference hopping. This
+-     has to be activated via channel property refernce speed
+-     (for further information see MCS Programmers Guide).
+-   * Implemented "distance to ref mark" property" for
+      positioners with distance-coded reference marks.
+-   * Adjusted calibration amplitude for two sensor types
+-     with calibration auto mode (SC500 and SD).
+-------------------------------------------------------------
+
+--------------- Release October 27th 2015 ------------------
+- * SC          3.14.271
+-   * Fixed bug for 0V-firmware-variant: actuator may have
+-     moved away from the upper crossing point after
+-     referencing if a hold time greater than zero was set.
+-   * Adjusted sensor parameters for new L-sensors and
+-     0V-firmware-variant.
+-------------------------------------------------------------
+
+--------------- Release October 16th 2015 ------------------
+- * SC          3.14.270
+-   * Fixed bug with acceleration where positioner could stop
+-     before target position was reached and was stuck in
+-     targeting state.
+-------------------------------------------------------------
+
+--------------- Release September 23rd 2015 -----------------
+- * SC          3.14.269
+-   * Added sensor types L and LD.
+- * HCM3        1.5.107
+-   * Fixes for joystick function for closed-loop mode.
+-   * Added sensor types L and LD.
+- * HCMn        1.4.60
+-   * Fixes for joystick function for closed-loop mode.
+-   * Added sensor types L and LD.
+------------------------------------------------------------
+
+--------------- Release September 3rd 2015 -----------------
+- * SC          3.14.268
+-   * Added sensor types LC and LR.
+- * HCM3        1.5.105
+-   * Added joystick function for closed-loop mode.
+-   * Added sensor types LC and LR.
+- * HCMn        1.4.59
+-   * Added joystick function for closed-loop mode.
+-   * Added sensor types LC and LR.
+------------------------------------------------------------
+
+--------------- Release July 27th 2015 ---------------------
+- * SC          3.13.265
+-   * Added sensor type SR120.
+- * HCM3        1.5.102
+-   * Added sensor type SR120.
+- * HCMn        1.4.56
+-   * Added sensor type SR120.
+------------------------------------------------------------
+
+--------------- Release July 7th 2015 ---------------------
+- * SC          3.13.264
+-   * Fixed bug with referencing distance coded sensor types.
+------------------------------------------------------------
+
+--------------- Release June 22nd 2015 ---------------------
+- * SC          3.13.263
+-   * Added property to measure the distance between the
+-     reference mark and starting point of find ref command.
+- * HCM3        1.5.100
+-   * Implemented dynamic calibration.
+------------------------------------------------------------
+
+--------------- Release May 21st 2015 ----------------------
+- * SC          3.13.262
+-   * Implemented dynamic calibration.
+- * HCMn        1.4.55
+-   * Fixed bug when displaying reference menu in rare
+-     situations.
+-   * Implemented dynamic calibration.
+- * IMrs        1.3.48
+-   * Fixed bug when reading end effector type
+-     configuration.
+------------------------------------------------------------
+
+--------------- Release Feburary 20th 2015 -----------------
+- * SC          3.12.261
+-   * Fixed bug with custom sensor type (rotary types were
+-     not properly written to custom sensor type slot).
+------------------------------------------------------------
+
+--------------- Release January 30th 2015 ------------------
+- * SC          3.12.259
+-   * Fixed bug with logical scale inversion and distance
+-     coded reference marks.
+-   * Implemented analog control mode where position
+-     calculation is still active.
+- * HCM3        1.5.99
+-   * Implemented HCM config slot configuration via
+-     application tool.
+- * HCMn        1.4.53
+-   * Implemented HCM config slot configuration via
+-     application tool.
+- * IMeth       1.0.18
+-   * Implemented HCM config slot configuration via
+-     application tool.
+-   * Support for various find ref modes.
+-   * Small bug fixes.
+- * IMrs        1.3.47
+-   * Implemented HCM config slot configuration via
+-     application tool.
+------------------------------------------------------------
+
+--------------- Release January 7th 2015 -------------------
+- * HCM3        1.5.98
+-   * Simple mode now supports scanning (if steps=0 in speed
+-     table).
+- * HCMn        1.4.52
+-   * Simple mode now supports scanning (if steps=0 in speed
+-     table).
+------------------------------------------------------------
+
+--------------- Release October 9th 2014 -------------------
+- * SC          3.12.257
+-   * Added support for SCT sensor type.
+- * HCM3        1.4.97
+-   * Added support for SCT sensor type.
+- * HCMn        1.3.51
+-   * Added support for SCT sensor type.
+------------------------------------------------------------
+
+--------------- Release August 14th 2014 -------------------
+- * SC          3.12.256
+-   * Added support for SHL20 sensor type.
+- * HCM3        1.4.96
+-   * Added support for SHL20 sensor type.
+- * HCMn        1.3.50
+-   * Added support for SHL20 sensor type.
+------------------------------------------------------------
+
+--------------- Release July 18th 2014 ---------------------
+- * SC          3.12.255
+-   * Adjusted find ref parameter for sensor types G605S and
+-     G775S.
+-   * Optimized overwriting of closed-loop movement commands
+-     while speed control active (smoother transition).
+------------------------------------------------------------
+
+--------------- Release July 10th 2014 ---------------------
+- * SC          3.12.254
+-   * Added support for G935M sensor type.
+- * HCM3        1.4.95
+-   * Added support for G935M sensor type.
+-   * When entering the menu a default config stream is
+-     sent to the display. (esd requirements / restore
+-     display after esd shock)
+- * HCMn        1.2.48
+-   * Added support for G935M sensor type.
+-   * When entering the menu a default config stream is
+-     sent to the display. (esd requirements / restore
+-     display after esd shock)
+------------------------------------------------------------
+
+--------------- Release May 23rd 2014 ----------------------
+- * SC          3.12.253
+-   * EnableForcedSlip property is now non-volatile.
+-   * Made SC500 ref mark coding sensitive to Distance Code
+-     Inverted flag.
+-   * Fixed absolute position calculation of distance coded
+-     sensors while power save mode is active.
+------------------------------------------------------------
+
+--------------- Release March 07th 2014 --------------------
+- * IMrs        1.2.44
+-   * Serial numbers are prepended by "0x"
+- * IMeth       1.0.16
+-   * Reduced internal baudrate for better stability.
+------------------------------------------------------------
+
+--------------- Release September 4th 2013 -----------------
+- * IMrs        1.2.43
+-   * Small fix when sending serial numbers
+------------------------------------------------------------
+
+--------------- Release September 3rd 2013 -----------------
+- * SC          3.12.250
+-   * Phys. position known is invalidated when a reference
+-     movement is started.
+- * IMrs        1.2.42
+-   * Changed bus initialization. Starting serial is cached
+-     for speed-up.
+------------------------------------------------------------
+
+--------------- Release August 26th 2013 -------------------
+- * IMrs        1.2.41
+-   * Added commands to fetch firmware version and per-
+-     mission bytes
+------------------------------------------------------------
+
+--------------- Release July 17th 2013 ---------------------
+- * Changes not tracked, released FW Versions:
+-   * EM        1.0.12
+-   * HCM3      1.4.93
+-   * HCMn      1.2.46
+-   * IMrs      1.1.35
+-   * IMusb     1.0.35
+-   * SG        1.3.45
+-   * SC        3.12.248
+------------------------------------------------------------

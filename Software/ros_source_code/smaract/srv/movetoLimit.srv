@@ -1,0 +1,4 @@
+bool calibrate
+int32 chan
+---
+bool moveSuccess

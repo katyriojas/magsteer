@@ -1,0 +1,6 @@
+int32 chan
+float64 pos
+float64 speed
+float64 accel
+---
+bool moveSuccess
